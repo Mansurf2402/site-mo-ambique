@@ -1,85 +1,211 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moçambique</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #006747;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Banner inicial */
+    .banner {
+      background: linear-gradient(135deg, #006747 25%, #d21034 25% 50%, #ffcd00 50% 75%, #000000 75%);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .banner h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+    }
+
+    /* Seções */
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #006747;
+    }
+
+    section img {
+      display: block;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Curiosidades */
+    .curiosidade-box {
+      display: inline-block;
+      background-color: #ffcd00;
+      color: black;
+      padding: 15px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #006747;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Moçambique</h1>
 
-  <nav>
-    <a href="#geografia">Geografia</a> |
-    <a href="#clima">Clima</a> |
-    <a href="#fauna">Fauna</a> |
-    <a href="#cultura">Cultura</a> |
-    <a href="#historia">História</a> |
-    <a href="#turismo">Turismo</a> |
-    <a href="#economia">Economia</a>
-  </nav>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Bandeira de Moçambique">
+      Moçambique
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#geografia">Geografia</a>
+      <a href="#clima">Clima</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#historia">História</a>
+      <a href="#turismo">Turismo</a>
+      <a href="#economia">Economia</a>
+      <a href="#curiosidades">Curiosidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-  <h2>Descubra Moçambique</h2>
-  <p>Um país de belezas naturais, história rica e cultura vibrante.</p>
+  <!-- Banner -->
+  <section id="home" class="banner">
+    <h1>Bem-vindo a Moçambique!</h1>
+    <p>Descubra sua geografia, cultura, história e muito mais.</p>
+  </section>
 
-  <h2 id="geografia">Geografia</h2>
-  <p>
-    Localizado no sudeste da África, Moçambique é banhado por mais de 2.400 km de costa do Oceano Índico. 
-    O país possui uma diversidade geográfica impressionante: praias, rios largos, planícies férteis, planaltos e cadeias de montanhas como a Serra de Chimanimani, onde está o ponto mais alto do país, o Monte Binga (2.436 metros). 
-    Seus principais rios incluem o Zambeze, Limpopo e Rovuma, que são essenciais para a agricultura, energia e transporte.
-  </p>
+  <!-- Geografia -->
+  <section id="geografia">
+    <h2>Geografia</h2>
+    <p>Moçambique está localizado no sudeste da África, banhado pelo Oceano Índico. 
+       Faz fronteira com Tanzânia, Malawi, Zâmbia, Zimbábue, África do Sul e Essuatíni. 
+       Seu relevo é variado, com planícies litorâneas, planaltos e montanhas.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Mozambique_%28orthographic_projection%29.svg" alt="Mapa de Moçambique">
+  </section>
 
-  <h2 id="clima">Clima</h2>
-  <p>
-    O clima de Moçambique é tropical úmido, com duas estações principais: a chuvosa (outubro a março) e a seca (abril a setembro).
-    As temperaturas são geralmente elevadas, variando entre 20°C e 35°C. Nas regiões costeiras, a umidade é mais alta, enquanto no interior o clima tende a ser mais seco.
-    O país frequentemente enfrenta eventos climáticos extremos, como ciclones tropicais, especialmente no centro e norte do território.
-  </p>
+  <!-- Clima -->
+  <section id="clima">
+    <h2>Clima</h2>
+    <p>O clima de Moçambique é tropical, com duas estações principais: 
+       a chuvosa (de outubro a março) e a seca (de abril a setembro). 
+       As temperaturas médias variam entre 20°C e 30°C.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Mozambique_sat.png" alt="Imagem de satélite de Moçambique">
+  </section>
 
-  <h2 id="fauna">Fauna</h2>
-  <p>
-    A fauna de Moçambique é rica e diversa. O país abriga espécies emblemáticas como elefantes, leões, leopardos, hipopótamos e crocodilos. 
-    A vida marinha também é abundante, com golfinhos, tubarões, tartarugas marinhas e recifes de coral. 
-    Os parques nacionais, como a Gorongosa e o Arquipélago de Bazaruto, são importantes reservas ecológicas e destinos de ecoturismo, onde se promove a conservação da vida selvagem e o turismo sustentável.
-  </p>
+  <!-- Cultura -->
+  <section id="cultura">
+    <h2>Cultura</h2>
+    <p>A cultura moçambicana é marcada pela diversidade de etnias e tradições. 
+       A música e a dança são muito presentes, destacando-se o Marrabenta. 
+       A culinária mistura sabores africanos e portugueses.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Marrabenta.jpg" alt="Música tradicional de Moçambique">
+  </section>
 
-  <h2 id="cultura">Cultura</h2>
-  <p>
-    A cultura moçambicana é marcada por uma mistura de tradições africanas e influências portuguesas. 
-    O português é a língua oficial, mas há várias línguas bantu faladas em diferentes regiões. 
-    A culinária local inclui pratos como matapa (folhas de mandioca cozidas com amendoim e leite de coco), xima (papa de milho) e frutos do mar com piri-piri.
-    A música tradicional, como a marrabenta e o pandza, é muito popular, e o uso da capulana (tecido colorido) é símbolo de identidade cultural.
-  </p>
+  <!-- História -->
+  <section id="historia">
+    <h2>História</h2>
+    <p>Moçambique foi colonizado por Portugal no século XVI e conquistou sua independência em 1975. 
+       Após anos de guerra civil, o país vive um processo de reconstrução e desenvolvimento.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Maputo_City_Hall.jpg" alt="Prefeitura de Maputo, capital de Moçambique">
+  </section>
 
-  <h2 id="historia">História</h2>
-  <p>
-    Antes da colonização, a região de Moçambique era habitada por vários grupos étnicos que praticavam agricultura, pesca e comércio com povos árabes e asiáticos. 
-    Os portugueses chegaram no século XVI e estabeleceram postos comerciais e colônias. 
-    Após anos de domínio colonial, a luta pela independência foi liderada pela FRELIMO, culminando na independência em 25 de junho de 1975. 
-    No entanto, o país enfrentou uma guerra civil entre a FRELIMO e a RENAMO até 1992. 
-    Desde então, Moçambique tem trabalhado para alcançar estabilidade e desenvolvimento.
-  </p>
+  <!-- Turismo -->
+  <section id="turismo">
+    <h2>Turismo</h2>
+    <p>O turismo em Moçambique é famoso por suas praias paradisíacas, como as da Ilha de Moçambique e da Ilha de Bazaruto. 
+       O Parque Nacional da Gorongosa é um dos principais destinos de safári.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Bazaruto_Archipelago.jpg" alt="Ilha de Bazaruto">
+  </section>
 
-  <h2 id="turismo">Turismo</h2>
-  <p>
-    Moçambique é um destino turístico em crescimento, conhecido por suas praias paradisíacas, vida marinha e cultura vibrante. 
-    A Ilha de Moçambique, considerada Patrimônio Mundial pela UNESCO, oferece arquitetura histórica e praias tranquilas. 
-    O Arquipélago de Bazaruto é famoso pelas águas cristalinas e rica biodiversidade marinha. 
-    Outros locais populares incluem o Parque Nacional da Gorongosa, Praia do Tofo, Maputo (a capital) e Ponta do Ouro.
-    O turismo ecológico e cultural tem se destacado como um setor promissor da economia.
-  </p>
+  <!-- Economia -->
+  <section id="economia">
+    <h2>Economia</h2>
+    <p>A economia de Moçambique baseia-se na agricultura, mineração e energia. 
+       Produtos como camarão, algodão, carvão e gás natural são importantes para o país.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Cashew_nuts_in_Mozambique.jpg" alt="Castanha de caju em Moçambique">
+  </section>
 
-  <h2 id="economia">Economia</h2>
-  <p>
-    A economia de Moçambique é baseada principalmente na agricultura, com produtos como milho, mandioca, feijão, algodão, castanha de caju e banana. 
-    A pesca artesanal é essencial para as comunidades costeiras. 
-    Nos últimos anos, a exploração de gás natural e carvão mineral tem ganhado destaque, atraindo investimentos internacionais. 
-    Apesar do potencial, o país ainda enfrenta desafios como pobreza, desemprego, desigualdade social e infraestrutura precária. 
-    O turismo e os recursos naturais são vistos como caminhos para um crescimento mais sustentável.
-  </p>
+  <!-- Curiosidades -->
+  <section id="curiosidades">
+    <h2>Você sabia?</h2>
+    <div class="curiosidade-box">🌊 Moçambique tem mais de 2.500 km de litoral.</div>
+    <div class="curiosidade-box">🗣️ O português é a língua oficial, mas existem mais de 40 línguas nativas.</div>
+    <div class="curiosidade-box">🦁 O Parque Nacional da Gorongosa é conhecido como o "Serengeti de Moçambique".</div>
+  </section>
 
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Site desenvolvido como trabalho escolar — 3º ano.</p>
+    <p>Equipe: guris da 311</p>
+  </section>
+
+  <!-- Rodapé -->
   <footer>
-    <img src="img/bandeira.png" alt="Bandeira de Moçambique">
-    <p>Trabalho Escolar – Desenvolvido com dedicação</p>
+    guris da 311
   </footer>
+
 </body>
 </html>
+
 
