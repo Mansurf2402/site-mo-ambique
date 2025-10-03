@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
+      background-color: #ffffff;
       scroll-behavior: smooth;
     }
 
     /* Cabeçalho */
     header {
-      background-color: #006747; /* Verde da bandeira */
+      background-color: #006747;
       color: white;
       display: flex;
       align-items: center;
@@ -65,23 +65,34 @@
       font-size: 1.2em;
     }
 
-    /* Seções */
+    /* Seções com caixas coloridas */
     section {
       padding: 50px 20px;
       max-width: 900px;
       margin: auto;
     }
 
-    section h2 {
-      text-align: center;
+    .box {
+      border-radius: 10px;
+      padding: 20px;
       margin-bottom: 20px;
-      font-size: 2em;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    section p {
-      line-height: 1.6;
+    .verde { background-color: #006747; }
+    .vermelho { background-color: #d21034; }
+    .amarelo { background-color: #ffcd00; color: black; }
+    .preto { background-color: #000000; }
+
+    .box h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .box p {
       text-align: justify;
-      margin-bottom: 15px;
+      line-height: 1.6;
     }
 
     /* Rodapé */
@@ -91,6 +102,13 @@
       text-align: center;
       padding: 15px;
       margin-top: 30px;
+      font-size: 0.9em;
+    }
+
+    footer .fontes {
+      font-size: 0.8em;
+      margin-top: 10px;
+      color: #cccccc;
     }
   </style>
 </head>
@@ -105,8 +123,11 @@
     <nav>
       <a href="#geografia">Geografia</a>
       <a href="#clima">Clima</a>
+      <a href="#fauna">Fauna e Flora</a>
       <a href="#cultura">Cultura</a>
+      <a href="#desastres">Desastres</a>
       <a href="#historia">História</a>
+      <a href="#sociedade">Sociedade</a>
       <a href="#turismo">Turismo</a>
       <a href="#economia">Economia</a>
     </nav>
@@ -118,60 +139,89 @@
     <p>Descubra sua geografia, cultura, história e muito mais.</p>
   </section>
 
-  <!-- Geografia -->
+  <!-- Conteúdo -->
   <section id="geografia">
-    <h2>Geografia</h2>
-    <p>Moçambique está localizado na costa sudeste da África, banhado pelo Oceano Índico. O país faz fronteira com a Tanzânia, Malawi, Zâmbia, Zimbábue, África do Sul e Essuatíni.</p>
-    <p>Seu território possui cerca de 2.500 km de litoral, com belas praias, ilhas e recifes de corais. O interior é marcado por planícies, savanas e montanhas, como a Serra da Gorongosa.</p>
-    <p>O rio Zambeze, um dos maiores da África, atravessa o país e é de grande importância econômica e cultural.</p>
+    <div class="box verde">
+      <h2>Localização e Geografia</h2>
+      <p>Moçambique está localizado no sudeste da África, banhado pelo Oceano Índico. Faz fronteira com a Tanzânia, Malawi, Zâmbia, Zimbábue, África do Sul e Essuatíni.</p>
+      <p>O relevo é marcado por um litoral plano, planaltos e montanhas no interior. O Monte Binga, com 2.436 metros, é o ponto mais alto do país.</p>
+    </div>
   </section>
 
-  <!-- Clima -->
   <section id="clima">
-    <h2>Clima</h2>
-    <p>O clima de Moçambique é predominantemente tropical, influenciado pelo Oceano Índico. Existem duas estações principais: a chuvosa (de novembro a março) e a seca (de abril a outubro).</p>
-    <p>As temperaturas médias variam entre 20°C e 30°C, sendo mais quentes no norte e no litoral, e um pouco mais amenas nas áreas montanhosas do interior.</p>
-    <p>Durante a estação chuvosa, ciclones tropicais podem atingir a região, trazendo fortes ventos e chuvas intensas.</p>
+    <div class="box vermelho">
+      <h2>Clima e Mudanças Climáticas</h2>
+      <p>O clima é tropical úmido, dividido em duas estações: a chuvosa (outubro a março) e a seca (abril a setembro).</p>
+      <p>O norte e o litoral são mais quentes e úmidos, enquanto o interior e o sul são mais secos. O país enfrenta secas, ciclones e inundações recorrentes.</p>
+    </div>
   </section>
 
-  <!-- Cultura -->
+  <section id="fauna">
+    <div class="box amarelo">
+      <h2>Fauna e Flora</h2>
+      <p>Moçambique possui rica biodiversidade. Nos parques nacionais é possível encontrar elefantes, leões, zebras, hipopótamos e girafas.</p>
+      <p>Na fauna marinha destacam-se golfinhos, tubarões e tartarugas. A Gorongosa e o Arquipélago de Bazaruto são regiões de grande diversidade natural.</p>
+    </div>
+  </section>
+
   <section id="cultura">
-    <h2>Cultura</h2>
-    <p>A cultura moçambicana é diversa e rica, resultado da mistura de tradições africanas com influências árabes e portuguesas. A música e a dança têm grande destaque, como a marrabenta e os tambores tradicionais.</p>
-    <p>A culinária é variada, com pratos como a matapa (folhas de mandioca cozidas com amendoim), o camarão grelhado e o famoso frango à zambeziana.</p>
-    <p>Além do português, que é a língua oficial, existem mais de 40 línguas locais faladas, como o changana, macua e sena.</p>
+    <div class="box preto">
+      <h2>Culinária e Cultura</h2>
+      <p>A culinária inclui pratos como matapa, xima e frutos do mar, com destaque para o uso do molho picante piri-piri. </p>
+      <p>A capulana é o tecido tradicional usado pelas mulheres, e a música moçambicana é marcada pela marrabenta, acompanhada de danças vibrantes.</p>
+    </div>
   </section>
 
-  <!-- História -->
+  <section id="desastres">
+    <div class="box verde">
+      <h2>Desastres Naturais</h2>
+      <p>O país é frequentemente afetado por ciclones tropicais, como o Idai em 2019, que causou grande destruição.</p>
+      <p>Também sofre com inundações durante as chuvas e secas que prejudicam a agricultura e o abastecimento de água.</p>
+    </div>
+  </section>
+
   <section id="historia">
-    <h2>História</h2>
-    <p>Os primeiros habitantes de Moçambique foram povos caçadores e coletores, seguidos por comunidades bantu que migraram para a região. Durante séculos, a costa moçambicana foi um importante centro de comércio árabe e persa.</p>
-    <p>No final do século XV, os portugueses chegaram e estabeleceram colônias, controlando o comércio local. Moçambique permaneceu sob domínio português até o século XX.</p>
-    <p>Após uma longa luta de independência liderada pela FRELIMO, o país tornou-se independente em 25 de junho de 1975. Posteriormente, enfrentou uma guerra civil que terminou em 1992.</p>
+    <div class="box vermelho">
+      <h2>História Importante</h2>
+      <p>A colonização portuguesa iniciou-se no século XVI. A luta de independência ocorreu entre 1964 e 1974, liderada pela FRELIMO, culminando na independência em 25 de junho de 1975.</p>
+      <p>Entre 1977 e 1992, o país viveu uma guerra civil entre a FRELIMO e a RENAMO. A partir dos anos 2000, iniciou-se a reconstrução e desenvolvimento.</p>
+    </div>
   </section>
 
-  <!-- Turismo -->
+  <section id="sociedade">
+    <div class="box amarelo">
+      <h2>Idioma e Sociedade</h2>
+      <p>A língua oficial é o português, falado com sotaque moçambicano. Além disso, há dezenas de línguas bantu como o changana, makhuwa e sena.</p>
+      <p>A sociedade é marcada por diversidade cultural, com influências africanas, árabes e portuguesas.</p>
+    </div>
+  </section>
+
   <section id="turismo">
-    <h2>Turismo</h2>
-    <p>Moçambique é um destino turístico em crescimento, conhecido por suas praias paradisíacas, parques nacionais e ilhas tropicais. A Ilha de Moçambique é Patrimônio Mundial da UNESCO e guarda construções históricas coloniais.</p>
-    <p>O Parque Nacional da Gorongosa é um dos mais importantes da África, com grande biodiversidade de animais selvagens. Já o arquipélago de Bazaruto é famoso por águas cristalinas e vida marinha exuberante.</p>
+    <div class="box preto">
+      <h2>Pontos Turísticos</h2>
+      <p>Entre os principais destinos estão a Ilha de Moçambique (Patrimônio da UNESCO), o Arquipélago de Bazaruto, o Parque Nacional da Gorongosa, a Praia do Tofo e a cidade de Maputo.</p>
+    </div>
   </section>
 
-  <!-- Economia -->
   <section id="economia">
-    <h2>Economia</h2>
-    <p>A economia de Moçambique baseia-se principalmente na agricultura, mineração e energia. Produtos como algodão, castanha de caju, mandioca e milho são cultivados em várias regiões.</p>
-    <p>O país possui reservas de carvão, gás natural e outros minerais, que têm atraído investimentos internacionais. O setor pesqueiro também é importante, especialmente na exportação de camarão.</p>
-    <p>Nos últimos anos, o turismo tem crescido como uma nova fonte de renda e desenvolvimento econômico.</p>
+    <div class="box verde">
+      <h2>Agricultura e Economia</h2>
+      <p>Moçambique tem economia baseada na agricultura e pesca, com produtos como algodão, açúcar, chá, castanha de caju, milho, mandioca e banana.</p>
+      <p>O turismo vem crescendo e é uma área com grande potencial, assim como a mineração e exploração de gás natural.</p>
+    </div>
   </section>
 
   <!-- Rodapé -->
   <footer>
     guris da 311
+    <div class="fontes">
+      Fontes: Material escolar e PDF "Moçambique Apresentação"
+    </div>
   </footer>
 
 </body>
 </html>
+
 
 
 
