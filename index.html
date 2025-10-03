@@ -6,221 +6,99 @@
   <title>Moçambique</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
 
-    /* Cabeçalho */
     header {
       background-color: #006747;
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      text-align: center;
+      padding: 20px;
     }
 
     header img {
-      height: 40px;
-      margin-right: 10px;
+      width: 50px;
+      vertical-align: middle;
+      margin-left: 10px;
     }
 
-    header .logo {
-      display: flex;
-      align-items: center;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Banner inicial */
-    .banner {
-      background: linear-gradient(135deg, #006747 25%, #d21034 25% 50%, #ffcd00 50% 75%, #000000 75%);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .banner h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-
-    .banner p {
-      font-size: 1.2em;
-    }
-
-    /* Seções com caixas coloridas */
-    section {
-      padding: 50px 20px;
+    main {
+      padding: 20px;
       max-width: 900px;
       margin: auto;
     }
 
-    .box {
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    section {
+      margin-bottom: 40px;
     }
 
-    .verde { background-color: #006747; }
-    .vermelho { background-color: #d21034; }
-    .amarelo { background-color: #ffcd00; color: black; }
-    .preto { background-color: #000000; }
-
-    .box h2 {
-      margin-top: 0;
-      text-align: center;
+    h2 {
+      color: #006747;
+      margin-bottom: 10px;
     }
 
-    .box p {
-      text-align: justify;
-      line-height: 1.6;
-    }
-
-    /* Rodapé */
     footer {
-      background-color: #006747;
+      background: #333;
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
-      font-size: 0.9em;
     }
 
-    footer .fontes {
-      font-size: 0.8em;
-      margin-top: 10px;
-      color: #cccccc;
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho simplificado -->
   <header>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg" alt="Bandeira de Moçambique">
-      Moçambique
-    </div>
-    <nav>
-      <a href="#geografia">Geografia</a>
-      <a href="#clima">Clima</a>
-      <a href="#fauna">Fauna e Flora</a>
-      <a href="#cultura">Cultura</a>
-      <a href="#desastres">Desastres</a>
-      <a href="#historia">História</a>
-      <a href="#sociedade">Sociedade</a>
-      <a href="#turismo">Turismo</a>
-      <a href="#economia">Economia</a>
-    </nav>
+    <h1>Moçambique 
+      <img src="bandeira.png" alt="Bandeira de Moçambique">
+    </h1>
   </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <h1>Bem-vindo a Moçambique!</h1>
-    <p>Descubra sua geografia, cultura, história e muito mais.</p>
-  </section>
+  <main>
+    <section id="geografia">
+      <h2>Geografia</h2>
+      <p>Moçambique está localizado no sudeste da África, limitado pelo Oceano Índico a leste e fazendo fronteira com Tanzânia, Malawi, Zâmbia, Zimbábue, África do Sul e Essuatíni.</p>
+    </section>
 
-  <!-- Conteúdo -->
-  <section id="geografia">
-    <div class="box verde">
-      <h2>Localização e Geografia</h2>
-      <p>Moçambique está localizado no sudeste da África, banhado pelo Oceano Índico. Faz fronteira com a Tanzânia, Malawi, Zâmbia, Zimbábue, África do Sul e Essuatíni.</p>
-      <p>O relevo é marcado por um litoral plano, planaltos e montanhas no interior. O Monte Binga, com 2.436 metros, é o ponto mais alto do país.</p>
-    </div>
-  </section>
+    <section id="clima">
+      <h2>Clima</h2>
+      <p>O país possui um clima predominantemente tropical, influenciado pelas monções do Oceano Índico, com estação chuvosa e seca bem definidas.</p>
+    </section>
 
-  <section id="clima">
-    <div class="box vermelho">
-      <h2>Clima e Mudanças Climáticas</h2>
-      <p>O clima é tropical úmido, dividido em duas estações: a chuvosa (outubro a março) e a seca (abril a setembro).</p>
-      <p>O norte e o litoral são mais quentes e úmidos, enquanto o interior e o sul são mais secos. O país enfrenta secas, ciclones e inundações recorrentes.</p>
-    </div>
-  </section>
+    <section id="fauna">
+      <h2>Fauna</h2>
+      <p>Moçambique é lar de rica biodiversidade, incluindo elefantes, leões, leopardos e uma grande variedade de aves e espécies marinhas.</p>
+    </section>
 
-  <section id="fauna">
-    <div class="box amarelo">
-      <h2>Fauna e Flora</h2>
-      <p>Moçambique possui rica biodiversidade. Nos parques nacionais é possível encontrar elefantes, leões, zebras, hipopótamos e girafas.</p>
-      <p>Na fauna marinha destacam-se golfinhos, tubarões e tartarugas. A Gorongosa e o Arquipélago de Bazaruto são regiões de grande diversidade natural.</p>
-    </div>
-  </section>
+    <section id="cultura">
+      <h2>Cultura</h2>
+      <p>A cultura moçambicana é marcada pela mistura de tradições africanas e influências portuguesas, com destaque para a música, dança e gastronomia.</p>
+    </section>
+  </main>
 
-  <section id="cultura">
-    <div class="box preto">
-      <h2>Culinária e Cultura</h2>
-      <p>A culinária inclui pratos como matapa, xima e frutos do mar, com destaque para o uso do molho picante piri-piri. </p>
-      <p>A capulana é o tecido tradicional usado pelas mulheres, e a música moçambicana é marcada pela marrabenta, acompanhada de danças vibrantes.</p>
-    </div>
-  </section>
-
-  <section id="desastres">
-    <div class="box verde">
-      <h2>Desastres Naturais</h2>
-      <p>O país é frequentemente afetado por ciclones tropicais, como o Idai em 2019, que causou grande destruição.</p>
-      <p>Também sofre com inundações durante as chuvas e secas que prejudicam a agricultura e o abastecimento de água.</p>
-    </div>
-  </section>
-
-  <section id="historia">
-    <div class="box vermelho">
-      <h2>História Importante</h2>
-      <p>A colonização portuguesa iniciou-se no século XVI. A luta de independência ocorreu entre 1964 e 1974, liderada pela FRELIMO, culminando na independência em 25 de junho de 1975.</p>
-      <p>Entre 1977 e 1992, o país viveu uma guerra civil entre a FRELIMO e a RENAMO. A partir dos anos 2000, iniciou-se a reconstrução e desenvolvimento.</p>
-    </div>
-  </section>
-
-  <section id="sociedade">
-    <div class="box amarelo">
-      <h2>Idioma e Sociedade</h2>
-      <p>A língua oficial é o português, falado com sotaque moçambicano. Além disso, há dezenas de línguas bantu como o changana, makhuwa e sena.</p>
-      <p>A sociedade é marcada por diversidade cultural, com influências africanas, árabes e portuguesas.</p>
-    </div>
-  </section>
-
-  <section id="turismo">
-    <div class="box preto">
-      <h2>Pontos Turísticos</h2>
-      <p>Entre os principais destinos estão a Ilha de Moçambique (Patrimônio da UNESCO), o Arquipélago de Bazaruto, o Parque Nacional da Gorongosa, a Praia do Tofo e a cidade de Maputo.</p>
-    </div>
-  </section>
-
-  <section id="economia">
-    <div class="box verde">
-      <h2>Agricultura e Economia</h2>
-      <p>Moçambique tem economia baseada na agricultura e pesca, com produtos como algodão, açúcar, chá, castanha de caju, milho, mandioca e banana.</p>
-      <p>O turismo vem crescendo e é uma área com grande potencial, assim como a mineração e exploração de gás natural.</p>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
+  <!-- Rodapé com fontes corrigidas -->
   <footer>
-    guris da 311
-    <div class="fontes">
-      Fontes: Material escolar e PDF "Moçambique Apresentação"
-    </div>
+    <p>Fontes: 
+      <a href="https://pt.wikipedia.org/wiki/Mo%C3%A7ambique" target="_blank">Wikipédia</a>, 
+      <a href="https://www.britannica.com/place/Mozambique" target="_blank">Encyclopedia Britannica</a>
+    </p>
   </footer>
 
 </body>
 </html>
+
 
 
 
